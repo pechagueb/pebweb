@@ -59,8 +59,8 @@ There are many improvements big and small over front-cover, making *Fuse Core* a
 - Use of Bootstrap for responsive design. This gives us supreme browser compatibility and ease of maintenance,
   because a myriad of problems are already handled by the folks at Bootstrap.
 - [SASS](https://sass-lang.com/) styling instead of raw CSS
-- Up-to-date libraries, especially Font Awesome&nbsp;5.
-- Support for [Google Analytics ](https://analytics.google.com/analytics/web/), including tracking of outbound links
+- Up-to-date libraries, especially Font Awesome&nbsp;7.
+- Support for [Google Analytics ](https://analytics.google.com/), including tracking of outbound links
   (so you'll know which social media profiles people clicked on), and some legal details such as IP anonymization
   and cookie consent popup (all optional).
 - Search engine control via configurable meta tags
@@ -75,7 +75,7 @@ This theme draws upon the following work by others:
   [MIT license](https://github.com/dashingcode/front-cover/blob/5fb173ed1b130a1414b8f839feea6d4e97cbd9b4/LICENSE).
 - All icons are provided by [Font Awesome](https://fontawesome.com/) under
   [SIL OFL](https://fontawesome.com/license) license.  
-  The [star icon](https://fontawesome.com/icons/star?style=solid) used as dummy favicon is provided
+  The [star icon](https://fontawesome.com/icons/star?s=solid) used as dummy favicon is provided
   by Font Awesome under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) license.
 - The [background image](https://pxhere.com/en/photo/792989) is used under
   [CC0 Public Domain](https://creativecommons.org/publicdomain/zero/1.0/) license.
