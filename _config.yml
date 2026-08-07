@@ -12,12 +12,12 @@ sass:
 # When modifying this file, take care to preserve the indentation. This is YAML ...
 
 # Main Headline, name required, subtitle optional
-name: Fuse Core
+name: Patricio Echagüe Ballesteros
 #subtitle:
-subtitle: Frontend Developer
+subtitle: Redes y más...
 
 # Title attribute of HTML Page, uses 'name' from above if empty
-title: Fuse Core
+title: Patricio Echagüe
 
 # Information for web crawlers / Google, all of them optional
 # 'description' and 'keywords' simply set the corresponding meta tags,
@@ -28,13 +28,13 @@ robots:
     crawl: index,follow
 
 # website address when deployed, also given as canonical link
-url: https://tsjensen.github.io/fuse-core/
+url: "https://pechagueb.github.io"
 
 # The 'baseurl' is prepended to all website-internal links.
 # 'baseurl' will often be '', but for a project page on gh-pages, it needs to be the project name.
 # If not empty, be careful to keep the leading slash, and don't add a slash at the end.
 #baseurl: ''
-baseurl: '/fuse-core'
+baseurl: '/pebweb'
 
 # Enable Google Analytics. Leave empty (just "ga:" with subitems commented out) to disable.
 # In order to comply with EU cookie law, enable 'cookieconsent' to show a little popup asking users to acknowledge
@@ -52,7 +52,7 @@ ga:
 # Leave empty (just "plausible:" with subitems commented out) to disable.
 #plausible:
 plausible:
-    domain: 'tsjensen.github.io'
+    domain: "https://pechagueb.github.io"
 
 
 # A picture of you, square(!), at least 180x180 pixels, more is better. Recommended file size < 100 KB.
@@ -73,17 +73,17 @@ links:
       icon: fa-brands fa-xing
   - linkedin:
       name: LinkedIn
-      show: false
+      show: true
       href: https://linkedin.com/in/YOUR_LINKEDIN_USERNAME/
       icon: fa-brands fa-linkedin
   - twitter:
       name: Twitter
-      show: true
+      show: false
       href: https://x.com/YOUR_TWITTER_USERNAME
       icon: fa-brands fa-x-twitter
   - weibo:
       name: 微博
-      show: true
+      show: false
       href: https://weibo.com/YOUR_WEIBO_USERNAME
       icon: fa-brands fa-weibo
   - facebook:
@@ -98,7 +98,7 @@ links:
       icon: fa-brands fa-vk
   - instagram:
       name: Instagram
-      show: false
+      show: true
       href: https://instagram.com/YOUR_INSTAGRAM_USERNAME
       icon: fa-brands fa-instagram
   - flickr:
@@ -123,13 +123,13 @@ links:
       icon: fa-brands fa-lastfm
   - gitlab:
       name: GitLab
-      show: true
+      show: false
       href: https://gitlab.com/tsjensen
       icon: fa-brands fa-gitlab
   - github:
       name: GitHub
       show: true
-      href: https://github.com/tsjensen
+      href: https://github.com/pechagueb
       icon: fa-brands fa-github
   - codepen:
       name: CodePen
@@ -159,16 +159,16 @@ links:
   - blog:
       name: Blog
       show: true
-      href: http://host.domain/your_blog
+      href: https://pechagueb.blogspot.com/
       icon: fa-solid fa-book-open
   - email:
       name: Email
       show: true
-      href: mailto:jonathan.doe@host.domain
+      href: mailto:pechagueb@gmail.com
       icon: fa-solid fa-envelope
   - publickey:
       name: PGP Key
-      show: true
+      show: false
       href: https://pastebin.com/raw/YOUR_PUBLIC_KEY
       icon: fa-solid fa-key
 
