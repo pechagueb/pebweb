@@ -58,7 +58,7 @@ plausible:
 # A picture of you, square(!), at least 180x180 pixels, more is better. Recommended file size < 100 KB.
 # Leave empty for generic placeholder image.
 # You can use your GitHub image:
-avatar: "https://avatars0.githubusercontent.com/u/8897534"
+avatar: "LogoPEB.png"
 #avatar: "images/jonathan_doe.jpg"
 #avatar:
 
@@ -88,7 +88,7 @@ links:
       icon: fa-brands fa-weibo
   - facebook:
       name: Facebook
-      show: false
+      show: true
       href: https://facebook.com/YOUR_FB_USERNAME
       icon: fa-brands fa-facebook
   - vkontakte:
