@@ -66,36 +66,16 @@ avatar: "pebweb/images/PEB-25.jpg"
 # All the social media and other sites that we want to link to. The 'show' flag determines if the link is shown.
 # The order of this list controls the order of the links on the page. Feel free to add.
 links:
-  - xing:
-      name: Xing
-      show: false
-      href: https://www.xing.com/profile/YOUR_XING_USERNAME/
-      icon: fa-brands fa-xing
   - linkedin:
       name: LinkedIn
       show: true
       href: https://linkedin.com/in/YOUR_LINKEDIN_USERNAME/
       icon: fa-brands fa-linkedin
-  - twitter:
-      name: Twitter
-      show: false
-      href: https://x.com/YOUR_TWITTER_USERNAME
-      icon: fa-brands fa-x-twitter
-  - weibo:
-      name: 微博
-      show: false
-      href: https://weibo.com/YOUR_WEIBO_USERNAME
-      icon: fa-brands fa-weibo
   - facebook:
       name: Facebook
       show: true
       href: https://facebook.com/YOUR_FB_USERNAME
       icon: fa-brands fa-facebook
-  - vkontakte:
-      name: ВКонтакте
-      show: false
-      href: https://vk.com/YOUR_VK_USERNAME
-      icon: fa-brands fa-vk
   - instagram:
       name: Instagram
       show: true
@@ -103,59 +83,19 @@ links:
       icon: fa-brands fa-instagram
   - flickr:
       name: Flickr
-      show: false
+      show: true
       href: https://flickr.com/photos/YOUR_FLICKR_USERNAME
       icon: fa-brands fa-flickr
-  - steam:
-      name: Steam
-      show: false
-      href: http://steamcommunity.com/id/YOUR_STEAM_CUSTOM_ID
-      icon: fa-brands fa-steam
-  - soundcloud:
-      name: Soundcloud
-      show: false
-      href: https://soundcloud.com/YOUR_SOUNDCLOUD_USERNAME
-      icon: fa-brands fa-soundcloud
-  - lastfm:
-      name: Last.fm
-      show: false
-      href: http://www.last.fm/user/YOUR_LASTFM_USERNAME
-      icon: fa-brands fa-lastfm
-  - gitlab:
-      name: GitLab
-      show: false
-      href: https://gitlab.com/tsjensen
-      icon: fa-brands fa-gitlab
   - github:
       name: GitHub
       show: true
       href: https://github.com/pechagueb
       icon: fa-brands fa-github
-  - codepen:
-      name: CodePen
-      show: false
-      href: https://codepen.io/YOUR_CODEPEN_USERNAME
-      icon: fa-brands fa-codepen
-  - stackoverflow:
-      name: Stack Overflow
-      show: false
-      href: https://stackoverflow.com/users/YOUR_SO_USERNAME/
-      icon: fa-brands fa-stack-overflow
   - reddit:
       name: Reddit
       show: false
       href: https://reddit.com/user/YOUR_REDDIT_USERNAME
       icon: fa-brands fa-reddit
-  - medium:
-      name: Medium
-      show: false
-      href: https://medium.com/@YOUR_MEDIUM_USERNAME
-      icon: fa-brands fa-medium
-  - tumblr:
-      name: Tumblr
-      show: false
-      href: https://YOUR_TUMBLR_USERNAME.tumblr.com/
-      icon: fa-brands fa-tumblr
   - blog:
       name: Blog
       show: true
@@ -166,17 +106,76 @@ links:
       show: true
       href: mailto:pechagueb@gmail.com
       icon: fa-solid fa-envelope
-  - publickey:
-      name: PGP Key
-      show: false
-      href: https://pastebin.com/raw/YOUR_PUBLIC_KEY
-      icon: fa-solid fa-key
 
 
 # Extra HTML which will be displayed below the links. Keep it short. Leave empty to disable.
 #extra_html:
+# extra_html: >
+##    Any (multiline) text containing simple HTML,
+#    such as links or ... lorem ipsum.
+    
 extra_html: >
-    Any (multiline) text containing simple HTML,
-    such as links or ... lorem ipsum.
+  <style>
+    .construction-banner {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      margin-top: 15px;
+      padding: 12px 24px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+    .construction-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #7aa2f7;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .construction-sub {
+      font-size: 0.88rem;
+      opacity: 0.85;
+      margin: 0;
+    }
+    .gear-spin {
+      display: inline-block;
+      animation: spin 6s linear infinite;
+      color: #e0af68;
+    }
+    .pulse-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: #9ece6a;
+      border-radius: 50%;
+      margin-left: 6px;
+      box-shadow: 0 0 8px #9ece6a;
+      animation: pulse 1.8s infinite ease-in-out;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.4); opacity: 0.4; }
+    }
+  </style>
+
+  <div class="construction-banner">
+    <div class="construction-title">
+      <i class="fa-solid fa-gear gear-spin"></i>
+      Sitio en Construcción
+      <span class="pulse-dot"></span>
+    </div>
+    <p class="construction-sub">Diseñando y preparando nuevo contenido. ¡Vuelve pronto!</p>
+  </div>
 
 #EOF
