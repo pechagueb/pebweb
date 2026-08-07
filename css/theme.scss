@@ -2,11 +2,15 @@
 # ========= Fuse Core Jekyll Theme ============================================================== #
 ---
 
+/* Importar la tipografía Rubik Glitch desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
 $fc-footer-height: 44px;
 
 html, body {
     font-family: 'Open Sans',Arial,Helvetica,sans-serif;
 }
+
 html {
     position: relative;
     min-height: 100%;
@@ -46,6 +50,7 @@ div.fuse-core-content {
 /* --------- Title / Subtitle ------------------------------------------------------------------ */
 
 h1 {
+    font-family: 'Rubik Glitch', system-ui, cursive; /* <--- Añadido aquí */
     letter-spacing: 0.1em;
     @media (max-width: 575.98px) {  /* used on bootstrap size 'xs' */
         letter-spacing: 0;
