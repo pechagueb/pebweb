@@ -66,25 +66,40 @@ avatar: "images/PEB-25.jpg"
 # All the social media and other sites that we want to link to. The 'show' flag determines if the link is shown.
 # The order of this list controls the order of the links on the page. Feel free to add.
 links:
-  - linkedin:
-      name: LinkedIn
-      show: true
-      href: https://linkedin.com/in/YOUR_LINKEDIN_USERNAME/
-      icon: fa-brands fa-linkedin
   - facebook:
       name: Facebook
       show: true
-      href: https://facebook.com/YOUR_FB_USERNAME
+      href: https://facebook.com/patricio.echagueballesteros
       icon: fa-brands fa-facebook
+  - yapadesign:
+      name: YapaDesign
+      show: true
+      href: https://www.facebook.com/yapadesign/
+      icon: fa-brands fa-facebook
+  - enercan:
+      name: EnerCan
+      show: true
+      href: https://www.facebook.com/renovablescanarias
+      icon: fa-brands fa-facebook
+  - youtube:
+      name: Youtube
+      show: true
+      href: https://www.youtube.com/@patricioeb
+      icon: fa-brands fa-youtube
+  - linkedin:
+      name: LinkedIn
+      show: true
+      href: https://www.linkedin.com/in/patricio-echag%C3%BCe-ballesteros-855484139/
+      icon: fa-brands fa-linkedin
   - instagram:
       name: Instagram
       show: true
-      href: https://instagram.com/YOUR_INSTAGRAM_USERNAME
+      href: https://www.instagram.com/patechagueb
       icon: fa-brands fa-instagram
   - flickr:
       name: Flickr
       show: true
-      href: https://flickr.com/photos/YOUR_FLICKR_USERNAME
+      href: https://www.flickr.com/photos/90581146@N08/
       icon: fa-brands fa-flickr
   - github:
       name: GitHub
@@ -121,7 +136,7 @@ extra_html: >
       flex-direction: column;
       align-items: center;
       gap: 8px;
-      margin-top: 15px;
+      margin-top: 80px;
       padding: 12px 24px;
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.15);
@@ -134,7 +149,7 @@ extra_html: >
       font-weight: 700;
       letter-spacing: 1.5px;
       text-transform: uppercase;
-      color: #7aa2f7;
+      color: #dba400;
       display: flex;
       align-items: center;
       gap: 10px;
@@ -172,10 +187,10 @@ extra_html: >
   <div class="construction-banner">
     <div class="construction-title">
       <i class="fa-solid fa-gear gear-spin"></i>
-      Sitio en Construcción
+      Siempre funcionando
       <span class="pulse-dot"></span>
     </div>
-    <p class="construction-sub">Diseñando y preparando nuevo contenido. ¡Vuelve pronto!</p>
+    <p class="construction-sub">Décadas de experiencia - Una vida de aprendizajes y enseñanzas.</p>
   </div>
 
 #EOF
