@@ -154,3 +154,15 @@ footer {
         }
     }
 }
+
+/* --------- Fluid Cursor Canvas ------------------------------------------------------------------ */
+
+#fluid-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10; /* Se renderiza sobre el glass-pane para ser claramente visible */
+    pointer-events: none; /* ESENCIAL: Permite hacer clic en enlaces y botones */
+}

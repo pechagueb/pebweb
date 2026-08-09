@@ -64,6 +64,9 @@ permalink: /
 </head>
 <body class="fullscreen-background">
 
+<!-- CANVAS PARA FLUID CURSOR -->
+<canvas id="fluid-canvas"></canvas>
+
 <!-- AÑADIDO: VÍDEO DE FONDO -->
 <video autoplay loop muted playsinline id="bg-video">
     <source src="{{ site.baseurl }}/images/background.mp4" type="video/mp4">
@@ -108,5 +111,99 @@ permalink: /
     Jekyll theme.</div>
 </div></div></footer>
 
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const canvas = document.getElementById('fluid-canvas');
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight;
+
+    window.addEventListener('resize', () => {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+    });
+
+    // Puntos de la estela del cursor
+    const points = [];
+    const maxPoints = 35; // Cola más larga para mayor presencia
+    let hue = 200; // Tonalidad inicial neón
+
+    let mouse = { x: width / 2, y: height / 2 };
+
+    window.addEventListener('mousemove', (e) => {
+        mouse.x = e.clientX;
+        mouse.y = e.clientY;
+
+        // Añadir punto a la trayectoria del fluido
+        points.push({
+            x: mouse.x,
+            y: mouse.y,
+            size: 40, // Ancho mayor del fluido (antes era 28)
+            hue: hue
+        });
+
+        // Variación suave de tonalidad en la gama Cyberpunk
+        hue = (hue + 0.6) % 360;
+        if (hue < 180) hue = 180;
+
+        if (points.length > maxPoints) {
+            points.shift();
+        }
+    });
+
+    function animate() {
+        // Desvanecimiento más lento (0.06 en lugar de 0.15 para que dure más tiempo)
+        ctx.save();
+        ctx.globalCompositeOperation = 'destination-out';
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.08)'; 
+        ctx.fillRect(0, 0, width, height);
+        ctx.restore();
+
+        if (points.length > 1) {
+            ctx.save();
+            // Fusión neón incandescente al solaparse
+            ctx.globalCompositeOperation = 'lighter';
+
+            for (let i = 1; i < points.length; i++) {
+                const p1 = points[i - 1];
+                const p2 = points[i];
+
+                // Dinámica de grosor progresivo
+                const ratio = i / points.length;
+                const currentSize = p2.size * ratio;
+
+                ctx.beginPath();
+                ctx.moveTo(p1.x, p1.y);
+                ctx.lineTo(p2.x, p2.y);
+
+                ctx.lineWidth = currentSize;
+                ctx.lineCap = 'round';
+                ctx.lineJoin = 'round';
+
+                // Color neón con aura más intensa
+                const color = `hsla(${p2.hue}, 90%, 65%, ${ratio * 0.85})`;
+                ctx.strokeStyle = color;
+                ctx.shadowColor = `hsl(${p2.hue}, 100%, 55%)`;
+                ctx.shadowBlur = 25; // Difuminado neón más amplio y suave
+
+                ctx.stroke();
+            }
+            ctx.restore();
+        }
+
+        // Reducción paulatina cuando el cursor se detiene
+        if (points.length > 0) {
+            points.forEach(p => p.size *= 0.975); // Desvanecimiento más suave al detener el ratón
+            if (points[0].size < 0.5) points.shift();
+        }
+
+        requestAnimationFrame(animate);
+    }
+
+    animate();
+});
+</script>
 </body>
 </html>
