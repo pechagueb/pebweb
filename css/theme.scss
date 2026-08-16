@@ -51,7 +51,7 @@ div.fuse-core-content {
 /* --------- Avatar ---------------------------------------------------------------------------- */
 
 #avatar {
-    height: 250px;
+    height: 180px;
     border-radius: 100%;
     border: 2px solid white;
 }
@@ -65,7 +65,7 @@ h1 {
     @media (max-width: 575.98px) {  /* used on bootstrap size 'xs' */
         letter-spacing: 0;
     }
-    font-size: 5em;
+    font-size: 3.5em;
 }
 h3 {
     font-size: 2em;
@@ -129,6 +129,66 @@ div.row.links {
     }
 }
 
+/* --------- Tarjeta "Último Post" ------------------------------------------------------------- */
+
+/* Tarjeta "Último Post" */
+.latest-post-card {
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 15px 20px;
+    max-width: 420px;
+    margin: 0 auto;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Ajuste de imagen: se escala completa sin deformarse ni recortar texto */
+.latest-post-img {
+    width: 100%;
+    height: 120px;            /* Alto fijo contenido */
+    object-fit: contain;      /* Muestra la imagen entera completa */
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Botón estilo píldora con efecto Hover */
+
+.btn-post-readmore {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 16px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #17a2b8, #007bff);
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.btn-post-readmore:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.6);
+    background: linear-gradient(90deg, #007bff, #6f42c1);
+}
+
+/* Alineación exacta del círculo de la flecha */
+.btn-post-readmore i {
+    margin-left: 8px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    padding: 0;
+    line-height: 1;
+}
 
 /* --------- Footer ---------------------------------------------------------------------------- */
 

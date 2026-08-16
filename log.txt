@@ -1,0 +1,6 @@
+Configuration file: /home/patricioeb/pebweb/_config.yml
+            Source: /home/patricioeb/pebweb
+       Destination: /home/patricioeb/pebweb/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+jekyll 3.10.0 | Error:  Liquid syntax error (line 228): 'if' tag was never closed

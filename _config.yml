@@ -130,67 +130,12 @@ links:
 #    such as links or ... lorem ipsum.
     
 extra_html: >
-  <style>
-    .construction-banner {
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-      margin-top: 80px;
-      padding: 12px 24px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      border-radius: 12px;
-      backdrop-filter: blur(5px);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    }
-    .construction-title {
-      font-size: 1.1rem;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: #dba400;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .construction-sub {
-      font-size: 0.88rem;
-      opacity: 0.85;
-      margin: 0;
-    }
-    .gear-spin {
-      display: inline-block;
-      animation: spin 6s linear infinite;
-      color: #e0af68;
-    }
-    .pulse-dot {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      background-color: #9ece6a;
-      border-radius: 50%;
-      margin-left: 6px;
-      box-shadow: 0 0 8px #9ece6a;
-      animation: pulse 1.8s infinite ease-in-out;
-    }
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.4); opacity: 0.4; }
-    }
-  </style>
 
-  <div class="construction-banner">
-    <div class="construction-title">
-      <i class="fa-solid fa-gear gear-spin"></i>
-      Siempre funcionando
-      <span class="pulse-dot"></span>
-    </div>
-    <p class="construction-sub">Décadas de experiencia - Una vida de aprendizajes y enseñanzas.</p>
-  </div>
+# Configuración del Último Post
+latest_post:
+  show: true
+  title: "Último Post"
+  image: "images/ultimo-post.jpg"
+  url: "https://www.linkedin.com/posts/patricio-echag%C3%BCe-ballesteros-855484139_activity-7493197203310551040-XK5u?utm_source=share&utm_medium=member_desktop&rcm=ACoAACG1J8EB82Sd0dtfn00grcqhqrZcTteyGAs"
 
 #EOF
