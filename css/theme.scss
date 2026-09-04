@@ -40,7 +40,11 @@ body {
 div.glass-pane {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
-    min-height: 100vh;
+    height: 100%;        /* Cambiado de min-height a height fijo porcentual */
+    min-height: 100vh;   /* Asegura que al menos cubra la pantalla completa */
+    position: absolute;  /* Fija el contenedor respecto al body */
+    top: 0;
+    left: 0;
 }
 
 div.fuse-core-content {

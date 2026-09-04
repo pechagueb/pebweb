@@ -1,0 +1,191 @@
+@charset "UTF-8";
+/* Importar la tipografía Rubik Glitch desde Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+html, body {
+  font-family: 'Open Sans',Arial,Helvetica,sans-serif; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  margin-bottom: 44px; }
+
+/* --------- Video Background ------------------------------------------------------------------ */
+#bg-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  object-fit: cover; }
+
+div.glass-pane {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  /* Cambiado de min-height a height fijo porcentual */
+  min-height: 100vh;
+  /* Asegura que al menos cubra la pantalla completa */
+  position: absolute;
+  /* Fija el contenedor respecto al body */
+  top: 0;
+  left: 0; }
+
+div.fuse-core-content {
+  color: white; }
+
+/* --------- Avatar ---------------------------------------------------------------------------- */
+#avatar {
+  height: 180px;
+  border-radius: 100%;
+  border: 2px solid white; }
+
+/* --------- Title / Subtitle ------------------------------------------------------------------ */
+h1 {
+  font-family: 'Rubik Glitch', system-ui, cursive;
+  letter-spacing: 0.1em;
+  font-size: 3em; }
+  @media (max-width: 575.98px) {
+    h1 {
+      /* used on bootstrap size 'xs' */
+      letter-spacing: 0; } }
+
+h3 {
+  font-size: 2em; }
+
+/* --------- The Main Links -------------------------------------------------------------------- */
+div.row.links > div {
+  white-space: nowrap;
+  padding: 0; }
+div.row.links a {
+  color: white;
+  border-radius: 100%;
+  border: 2px solid white;
+  display: inline-block;
+  font-size: 1.8em;
+  line-height: 1em;
+  overflow: hidden; }
+  @media (max-width: 575.98px) {
+    div.row.links a {
+      /* used on bootstrap size 'xs' */
+      border-radius: 10px;
+      width: 100%; } }
+  div.row.links a:hover {
+    text-decoration: none;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    transition: 300ms;
+    background-color: rgba(0, 0, 0, 0.5); }
+  div.row.links a > i {
+    display: inline-block;
+    margin: 16px 12px; }
+  div.row.links a > span {
+    margin-right: 15px; }
+
+/* --------- Extra HTML ------------------------------------------------------------------------ */
+.fuse-core-extra {
+  color: rgba(255, 255, 255, 0.7); }
+  .fuse-core-extra a {
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 3px;
+    padding: 0 2px; }
+    .fuse-core-extra a:hover {
+      color: white;
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.6); }
+
+/* --------- Tarjeta "Último Post" ------------------------------------------------------------- */
+/* Tarjeta "Último Post" */
+.latest-post-card {
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 15px 20px;
+  max-width: 420px;
+  margin: 0 auto;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); }
+
+/* Ajuste de imagen: se escala completa sin deformarse ni recortar texto */
+.latest-post-img {
+  width: 100%;
+  height: 200px;
+  /* Alto fijo contenido */
+  object-fit: contain;
+  /* Muestra la imagen entera completa */
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.2); }
+
+/* Botón estilo píldora con efecto Hover */
+.btn-post-readmore {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 50px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #17a2b8, #007bff);
+  color: #ffffff !important;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3); }
+
+.btn-post-readmore:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.6);
+  background: linear-gradient(90deg, #007bff, #6f42c1); }
+
+/* Alineación exacta del círculo de la flecha */
+.btn-post-readmore i {
+  margin-left: 8px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  padding: 0;
+  line-height: 1; }
+
+/* --------- Footer ---------------------------------------------------------------------------- */
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 44px;
+  line-height: 24px;
+  padding: 10px 0;
+  width: 100%;
+  font-size: smaller;
+  color: rgba(255, 255, 255, 0.4); }
+  footer .col {
+    padding: 0; }
+  footer a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none; }
+    footer a:hover {
+      text-decoration: none;
+      color: white; }
+
+/* --------- Fluid Cursor Canvas ------------------------------------------------------------------ */
+/* --------- Basado en: https://cursify.ui-layouts.com/components/fluid-cursor -------------------- */
+#fluid-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  /* Se renderiza sobre el glass-pane para ser claramente visible */
+  pointer-events: none;
+  /* ESENCIAL: Permite hacer clic en enlaces y botones */ }
