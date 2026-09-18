@@ -1,0 +1,7 @@
+[[widgets]]
+type = "countdown"
+x = 100
+y = 100
+width = 200
+height = 100
+duration = 300
