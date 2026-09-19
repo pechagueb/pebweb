@@ -5,6 +5,7 @@ hl.env("QT_QPA_PLATFORMTHEME", "qt5ct")
 hl.env("QT_QPA_PLATFORM", "wayland;xcb")
 hl.env("TQT_QPA_PLATFORMTHEME", "qt6ct") -- Para asegurar compatibilidad con Qt6
 hl.env("QT_STYLE_OVERRIDE", "kvantum")   -- Fuerza a Qt a delegar el estilo visual en Kvantum
-hl.env("GTK_THEME", "Adwaita-dark")
+hl.env("GTK_THEME", "adw-gtk3-dark")
+hl.env("XCURSOR_THEME", "default")
 
 hl.env("EDITOR", "fresh")
