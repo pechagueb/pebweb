@@ -2,7 +2,7 @@
 # https://ghostty.zerebos.com
 
 background-blur = macos-glass-regular
-background-opacity = 0.60
+background-opacity = 0.90
 clipboard-read = allow
 theme = Blazer
 
